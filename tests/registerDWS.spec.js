@@ -1,13 +1,11 @@
 import {test,expect} from "@playwright/test"
 
-test.skip("RegisterUser",async({page,browserName})=>{
+test("RegisterUser",async({page,browserName})=>{
 
     //open browser and navigate to URL
     await page.goto("https://demowebshop.tricentis.com/");
 
     console.log("launching browser="+browserName);
-    
-
     //click on Register Link
     await page.locator(".ico-register").click();
 
