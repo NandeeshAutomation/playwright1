@@ -28,9 +28,18 @@ test("login-test",async({browser,browserName})=>{
     let context = await browser.newContext();
     let page = await context.newPage();
     await page.goto("https://demowebshop.tricentis.com/");
+    console.log("Enterd into Website........");
+    
     await page.getByText("Log in").click();
+    console.log("Clicked on Login Link.....");
+
     await page.locator(".email").fill("priya333@gmail.com");
+
+    console.log("Enterd Email.....");
     await page.locator(".password").fill("nandi@123");
+    console.log("Enterd Password.....");
     await page.locator("//input[@value='Log in' ]").click();
-    await page.pause(3000);
+    console.log("Clicked On Login.....");
+    
+
 })
