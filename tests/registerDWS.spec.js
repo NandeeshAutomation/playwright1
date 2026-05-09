@@ -40,6 +40,9 @@ test("login-test",async({browser,browserName})=>{
     console.log("Enterd Password.....");
     await page.locator("//input[@value='Log in' ]").click();
     console.log("Clicked On Login.....");
+
+    console.log("Login successfull.....");
+    
     
 
 })
