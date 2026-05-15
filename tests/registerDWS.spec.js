@@ -41,6 +41,4 @@ test("login-test",async({browser,browserName})=>{
 
     console.log("Login successfull.....");
     
-    
-
 })
